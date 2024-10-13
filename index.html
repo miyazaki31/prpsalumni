@@ -1,3 +1,461 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6beb753d6cdc3bead28dd2b05ebdeb07b86e9dda058519187b6713cdda47b47
-size 21405
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="language" content="ES" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="shortcut icon" href="assets/images/favicon.ico" />
+<title>PRPS-AA</title>
+
+<!--PLUGIN-->
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+<body>
+
+<!-- Preloader -->
+
+<div id="preloader"></div>
+
+<button class="to-top is-hidden" id="to-top">2</button>
+
+
+<!-- Startup PopUp  -->
+
+
+<div class="popup_su">
+    <button id="su_close">&times;</button>
+    <h2>Scan the <span style="text-decoration: underline;">QR Code</span> <span style="color: #ffffff;">or</span> use the <span style="text-decoration: underline;">Nagad</span> number to pay your monthly fee</h2><br>
+    <img src="assets/images/payment.jpg" alt="" class="payment_img">
+    <br>
+    <h1>Nagad : 01962773482</h1>
+</div>
+
+
+<!--TOP MENU-->
+<menu class="top_menu flex">
+    <section class="flex_content">
+        <a href="mailto:prpsalumni@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            prpsalumni@gmail.com
+        </a>
+        <a href="tel:+880 1354-529474">
+            <i class="fa fa-headphones"></i>
+            +880 1354-529474
+        </a>
+    </section>
+    <section class="flex_content">
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+    </section>
+</menu>
+
+<!--NAV-->
+<nav>
+    <section class="flex_content">
+        <figure class="logo fixed_flex">
+            <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            <figcaption>
+                <strong class="title">PRPS</strong> Alumni Association
+            </figcaption>
+        </figure>
+    </section>
+    <section class="flex_content nav_content" id="nav_content">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="members.html">Faculty</a>
+        <a href="notices.html#scrolling">Notices</a>
+        <a href="events-gallery.html">Events Gallery</a>
+        <a href="contact.html" class="contact_btn">Contact Us</a>
+    </section>
+    <section class="flex_content">
+        <a href="javascript:void(0)" class="ham"><i class="fa fa-bars"></i></a>
+    </section>
+</nav>
+
+<!--MENU-->
+<menu id="menu" class="side_menu">
+    <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a>
+    <strong class="fixed_flex logo"><img src="assets/images/logo.png" alt="Summit"  loading="lazy" /></strong>
+    <br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="members.html">Faculty</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)">Events</a>
+            <aside>
+                <a href="notices.html#scrolling">Notices</a>
+                <a href="events-gallery.html">Events Gallery</a>
+            </aside>
+        </li>
+       
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href=""></a></li>
+        <!-- <li class="fixed_flex"><a href="javascript:void(0)" class="btn btn_1 chat_popup"></a> <a href="#" class="btn btn_2 chat_popup"></a> </li> -->
+    </ul>
+</menu>
+
+
+
+
+<!--HEADER-->
+<header class="flex">
+    <article>
+        <h1 class="title big">Welcome to <br><em>PRPS</em> Alumni Association</h1>
+        <p>Step into the PRPS Alumni Association's virtual hub, where rekindling connections, event updates, and invaluable resources await. Immerse yourself in our dynamic community, bridging the gap between past and present, and rediscover the enduring bonds forged beyond graduation. Join us today to embark on this journey of shared memories and lifelong connections.</p>
+        <a href="#" class="btn btn_3">Explore more</a>
+    </article>
+    <section class="flex">
+        <aside class="padding_1x">
+            <h2 class="sub_title">Community engagement</h2>
+            <p>The PRPS Alumni Association actively participates in community development initiatives, such as fundraising for humanitarian causes and organizing social welfare programs.</p>
+            <a href="#"><i class="fa-solid fa-1"></i></a>
+        </aside>
+        <aside class="padding_1x">
+            <h2 class="sub_title">Networking opportunities</h2>
+            <p>The association provides a platform for alumni to connect with each other, share experiences, and explore professional opportunities.</p>
+            <a href="#"><i class="fa-solid fa-2"></i></a>
+        </aside>
+        <aside class="padding_1x">
+            <h2 class="sub_title">Promoting school spirit</h2>
+            <p>The PRPS Alumni Association fosters a strong sense of school spirit and pride among its members, contributing to the overall success and reputation of the institution.</p>
+            <a href="#"><i class="fa-solid fa-3"></i></a>
+        </aside>
+    </section>
+</header>
+
+
+
+<!--MAIN-->
+<main>
+
+    <!--division_2-->
+    <div class="divisions division_2 flex">
+        <section class="flex_content padding_2x">
+            <div class="title_header">
+                <h2 class="title medium">Notices</h2><br>
+                <span class="bar_blue"></span>
+            </div>
+            <marquee direction="up" id="notification" onmouseover="this.stop();" onmouseleave="this.start();">
+                <!--notification begining-->
+                <a href="notices.html#scrolling" class="flex fixed_flex">
+                    <figure>
+                        <img src="assets/icons/notice-icon.png" alt="" loading="lazy" />
+                    </figure>
+                    <article>
+                        <h3 class="title">PRPS Football Carnival</h3>
+                        <p>Click for more info</p>
+                        <!-- <aside class="fixed_flex">
+                            <span>
+                                <i class="fa fa-calendar"></i>
+                                12-08-2023
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o"></i>
+                                20:38 pm
+                            </span>
+                        </aside> -->
+                    </article>
+                </a>
+                <!--notification ends-->
+                <!--notification begining-->
+                <!-- <a href="#" class="flex fixed_flex">
+                    <figure>
+                        <img src="assets/icons/notice-icon.png" alt="" loading="lazy" />
+                    </figure>
+                    <article>
+                        <h3 class="title">Lilliovi simple & cool web designing root way </h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration...</p>
+                        <aside class="fixed_flex">
+                            <span>
+                                <i class="fa fa-calendar"></i>
+                                12-08-2023
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o"></i>
+                                20:38 pm
+                            </span>
+                        </aside>
+                    </article>
+                </a> -->
+                <!--notification ends-->
+                <!--notification begining-->
+                <!-- <a href="#" class="flex fixed_flex">
+                    <figure>
+                        <img src="assets/icons/notice-icon.png" alt="" loading="lazy" />
+                    </figure>
+                    <article>
+                        <h3 class="title">Lilliovi simple & cool web designing root way </h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration...</p>
+                        <aside class="fixed_flex">
+                            <span>
+                                <i class="fa fa-calendar"></i>
+                                12-08-2023
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o"></i>
+                                20:38 pm
+                            </span>
+                        </aside>
+                    </article>
+                </a> -->
+                <!--notification ends-->
+                <!--notification begining-->
+                <!-- <a href="#" class="flex fixed_flex">
+                    <figure>
+                        <img src="assets/icons/notice-icon.png" alt="" loading="lazy" />
+                    </figure>
+                    <article>
+                        <h3 class="title">Lilliovi simple & cool web designing root way </h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration...</p>
+                        <aside class="fixed_flex">
+                            <span>
+                                <i class="fa fa-calendar"></i>
+                                12-08-2023
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o"></i>
+                                20:38 pm
+                            </span>
+                        </aside>
+                    </article>
+                </a> -->
+                <!--notification ends-->
+            </marquee>
+        </section>
+        <section class="flex_content padding_2x" id="event">
+            <div class="title_header">
+                <h2 class="title medium"> Upcoming Events</h2>
+                <p>Get a sneak peak of upcoming events.</p>
+                <span class="bar_white"></span>
+                <ul class="logo-slider event-slider">
+                    <li>
+                        <h3 class="title small">PRPS Football Carnival - 1</h3>
+                        <p>Get more details in...</p><br>
+                        <aside class="fixed_flex">
+                            <span class="time-d"></span><span>Days</span>
+                            <span class="time-h"></span><span>Hrs</span>
+                            <span class="time-m"></span><span>Min</span>
+                            <span class="time-s"></span><span>Sec</span>
+                        </aside>
+                        <a href="#" class="btn btn_2">Event details</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+     <!--division_3-->
+    <div class="divisions division_3 padding_2x">
+        <section class="title_header">
+            <h1 class="title">Events</h1>
+            <p>Looking back</p>
+            <span class="bar"></span>
+        </section>
+        <section class="slider padding_0x">
+            <ul class="card logo-slider blog-slider">
+               <!--card begining-->
+                <li> 
+                    <figure>
+                        <img src="assets/images/event-1.png" alt="" loading="lazy" />
+                    </figure>
+                    <article class="padding_1x">
+                        <strong class="tag">Recent</strong>
+                        <a href="#" class="title small">Tree Plantation Program</a>
+                        <p>ðŸŒ³ðŸŒ± Planting trees today for a greener tomorrow! Proud to see our teachers and students getting their hands dirty and their hearts invested in a brighter, greener future. <br> Credit goes to:SSC 22</p>
+                        <aside class="fixed_flex">
+                            <span class="flex-content">
+                                <a href="#"><i class="fa fa-calendar"></i> 28-08-2024</a>
+                                <a href="#"><i class="fa fa-clock-o"></i> 11:00 A.M.</a>
+                            </span>
+                        </aside>
+                    </article>
+                </li>
+                <!--card ends-->
+             <!--card begining-->
+                <li> 
+                    <figure>
+                        <img src="assets/images/event-2.jpg" alt="" loading="lazy" />
+                    </figure>
+                    <article class="padding_1x">
+                        <strong class="tag">Recent</strong>
+                        <a href="#" class="title small">Relief activities for flood victims</a>
+                        <p>The PRPS Alumni Association raised 76,570 BDT to aid flood victims in Bangladesh. The funds were donated to the Chief Adviser's Relief and Welfare Fund to be distributed to those affected. The association hopes to alleviate the suffering of flood victims and build a more compassionate society.</p>
+                        <aside class="fixed_flex">
+                            <span class="flex-content">
+                                <a href="#"><i class="fa fa-calendar"></i> 28-08-2024</a>
+                                <a href="#"><i class="fa fa-clock-o"></i> 10:00 A.M.</a>
+                            </span>
+                        </aside>
+                    </article>
+                </li>
+                <!--card ends-->
+                <!--card begining-->
+                <li> 
+                    <figure>
+                        <img src="assets/images/event-3.jpg" alt="" loading="lazy" />
+                    </figure>
+                    <article class="padding_1x">
+                        <strong class="tag">Older</strong>
+                        <a href="#" class="title small">PRPS-AA Cricket Carnival - 1</a>
+                        <p>The PRPS Alumni Association Cricket Carnival 1 was a huge success due to the participation of ex-batch students from Batch 2019 to Batch 2024. Batch 21 (PRPS KINGS) won the championship, and Batch 22 (PRPS Hurricanes) was the runner-up. The principal of Pran-RFL Public School, Mr. Shah Mohammad Jewell Reza Sir, was the chief guest of the event.</p>
+                        <aside class="fixed_flex">
+                            <span class="flex-content">
+                                <a href="#"><i class="fa fa-calendar"></i> 20-06-2024</a>
+                                <a href="#"><i class="fa fa-clock-o"></i> 11:00 A.M.</a>
+                            </span>
+                        </aside>
+                    </article>
+                </li>
+                <!--card ends-->
+                <!--card begining-->
+                <li> 
+                    <figure>
+                        <img src="assets/images/event-4.jpg" alt="" loading="lazy" />
+                    </figure>
+                    <article class="padding_1x">
+                        <strong class="tag">Older</strong>
+                        <a href="#" class="title small">Alumni Meeting - 2</a>
+                        <p>"We are pleased to announce the PRPS Alumni Association Convening Committee for the upcoming two years. Our dedicated team is committed to enhancing our alumni network, fostering professional growth, and building lasting connections. We look forward to an impactful term ahead."</p>
+                        <aside class="fixed_flex">
+                            <span class="flex-content">
+                                <a href="#"><i class="fa fa-calendar"></i> 19-06-2024</a>
+                                <a href="#"><i class="fa fa-clock-o"></i> 11:30 A.M.</a>
+                            </span>
+                        </aside>
+                    </article>
+                </li>
+                <!--card ends-->
+            </ul>
+        </section>
+    </div>
+    
+    <!--division_4-->
+    <div class="divisions division_4" onmousemove="animate_balls(event)">
+        <div class="title_header">
+            <h2 class="title medium">A Journey Through Time</h2>
+            <p>Relive the Moments</p>
+            <aside class="fixed_flex">
+                <a href="events-gallery.html" class="btn extra_btn">Gallery</a>
+            </aside>
+        </div>
+        <div class="cards">
+            <span class="ball"></span>
+            <span class="ball"></span>
+            <span class="ball"></span>
+            <span class="ball"></span>
+            <section class="fixed_flex fixed_grid">
+                <figure class="flex_content">
+                    <img src="assets/images/img-1.jpg" alt="" loading="lazy" />
+                </figure>
+                <figure class="flex_content">
+                    <img src="assets/images/img-2.jpg" alt="" loading="lazy" />
+                </figure>
+                <figure class="flex_content">
+                    <img src="assets/images/img-3.jpg" alt="" loading="lazy" />
+                </figure>
+                <figure class="flex_content">
+                    <img src="assets/images/img-4.jpg" alt="" loading="lazy" />
+                </figure>
+            </section>
+        </div>
+    </div>
+</main>
+
+
+<!--FOOTER-->
+<footer class="padding_4x">
+    <!-- <div class="top_footer flex">
+        <section class="flex_content">
+            <figure>
+                <img src="https://i.postimg.cc/KvwFLrVF/author.png" alt="" loading="lazy" />
+            </figure>
+        </section>
+        <section class="flex_content padding_2x">
+            <h2 class="title medium">Principal Message</h2>
+            <p>"It is easier to build strong children than to repair broken men". A wise quote referring to the role that children could play in laying the foundation of a strong nation. I believe that the foundation of a strong nation depends on the way its children are cared for and nurtured. In order to build a strong nation, we must instill good values in our children providing them love and care, guiding them through thick and thin till they become confident and strong enough. This all can be done through â€œQuality educationâ€.</p>
+        </section>
+    </div> -->
+  <div class="footer_body flex">
+    <section class="flex_content padding_1x">
+      <figure class="logo fixed_flex">
+            <img src="assets/images/logo.png" alt="">
+            <figcaption>
+                <strong class="title">PRPS</strong> Alumni Association
+            </figcaption>
+        </figure>
+        <a href="javascript:void(0)">
+            <i class="fa fa-map-marker"></i>
+            By pass Road, Fuldirtek, Ghorashal, Palash, Narsingdi
+        </a>
+        <a href="mailto:prpsalumni@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            prpsalumni@gmail.com
+        </a>
+        <a href="tel:+880 1354-529474">
+            <i class="fa fa-headphones"></i>
+            +880 1354-529474
+        </a>
+    </section>
+    <section class="flex_content padding_1x">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.6410242988045!2d90.62654657410707!3d23.937762481559876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375433eeafa15c8b%3A0x36eda5054c9157e8!2sPran-RFL%20Public%20School!5e0!3m2!1sen!2sbd!4v1724868139562!5m2!1sen!2sbd" width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </div>
+  <div class="flex copyright">
+    <section class="flex-content padding_1x">
+      <p>Copyright Â©2024 All rights reserved || PRPS-AA</p>
+    </section>
+    <section class="flex-content padding_1x">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </section>
+  </div>
+</footer>
+
+
+<!--ADDITIONAL-->
+<div class="overlay"></div>
+<div class="cursor"></div>
+
+<script src="assets/js/script.js"></script>
+<script>
+    // Startup PopUp 
+ window.addEventListener("load", function(){
+
+
+setTimeout(
+    function open(event){
+        document.querySelector(".popup_su").style.display = "block";
+    },
+    500
+);
+});
+document.querySelector("#su_close").addEventListener("click", function(){
+document.querySelector(".popup_su").style.display = "none";
+});
+
+</script>
+
+
+</body>
+
+</html>
