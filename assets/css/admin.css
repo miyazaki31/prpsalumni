@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+@mixin mQ($rem) {
+  @media screen and (min-width: $rem) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e8eaef !important;
+  min-height: 100vh !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+}
+/* 
+.nav_btn {
+  display:grid;
+  grid-auto-flow:column;
+  grid-gap:20px;
+  place-content:center;
+  margin:0;
+  height:5vh;
+}
+
+.nav_btn a {
+  text-decoration: none;
+  color: #000000ee;
+} */
+
+
+#nav_btn {
+  --border: 5px;    /* the border width */
+  --slant: 0.7em;   /* control the slanted corners */
+  --color: #a337fc; /* the color */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 25px;
+  padding: 0.4em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color);
+  background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s,#0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+  transition: color var(--t,0.3s), background-size 0.3s;
+}
+#nav_btn:focus-visible {
+  outline-offset: calc(-1*var(--border));
+  outline: var(--border) solid #000c;
+  clip-path: none;
+  background-size: 0 0;
+}
+#nav_btn:hover,
+#nav_btn:active{
+  background-size: 100% 100%;
+  color: #fff;
+  --t: 0.2s 0.1s;
+}
+#nav_btn:active {
+  --s: #0005;
+  transition: none;
+}
+
+
+
+
+
+#team {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-block: min(20vh, 5rem);
+  text-align: center;
+  width: calc(min(90rem, 90%));
+  margin-inline: auto;
+}
+  p,
+  h2,
+  h3 {
+    letter-spacing: 0.035rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  p {
+    line-height: 1.7;
+    color: #454545;
+    max-width: 70rem;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+    font-family: "Exo 2", sans-serif !important;
+  }
+
+  h2 {
+    font-size: clamp(3rem, 2.4286rem + 2.2857vw, 5rem);
+    font-family: "New Amsterdam", sans-serif !important;
+    color: #111;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    gap: 2rem;
+
+    @include mQ(51rem) {
+      gap: 3.5rem;
+    }
+
+    .card {
+      position: relative;
+      text-align: left;
+
+      .social-icon {
+        background: #111;
+        padding: 1rem 1.75rem;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+
+        i {
+          color: #fff;
+          font-size: 1.4rem;
+        }
+
+        &:hover i {
+          color: #003ef5;
+        }
+      }
+
+      img {
+        filter: grayscale(100%);
+        transition: 0.5s ease;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+
+      .card-content-wrapper {
+        margin-left: auto;
+        max-width: 90%;
+
+        .card-content {
+          display: block;
+          background: white;
+          transition: 0.5s ease;
+          padding: 4.5rem 2rem 0 3.2rem;
+
+          > div {
+            text-align: right;
+          }
+
+          h3,
+          p {
+            text-transform: capitalize;
+          }
+
+          h3 {
+            font-size: clamp(1.15rem, 1.1071rem + 0.1714vw, 1.3rem);
+            font-weight: 800;
+            color: #111;
+          }
+          p {
+            color: #454545;
+            font-size: 0.9rem;
+          }
+
+          svg {
+            display: inline-block;
+            text-align: right;
+            width: 60px;
+            color: #003ef5;
+          }
+        }
+      }
+
+      /*hover states*/
+      .card-img-wrapper:hover ~ .card-content-wrapper .card-content {
+        background: #003ef5;
+
+        h3,
+        p,
+        svg {
+          color: #fff;
+        }
+      }
+
+      .card-content-wrapper:hover .card-content {
+        background: #003ef5;
+
+        h3,
+        p,
+        svg {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+
+
+

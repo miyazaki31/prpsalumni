@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="language" content="ES" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--FONT AWESOME-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--GOOGLE FONTS-->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="shortcut icon" href="assets/images/favicon.ico" />
+<title>PRPS-AA</title>
+
+<!--PLUGIN-->
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+
+<!--***************************
+ 
+***********CSS*************
+
+********************************-->
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  width: clamp(100px, 90%, 1000px);
+  margin: 80px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-links, .contact-form-wrapper {
+  width: 50%;
+  padding: 8% 5% 10% 5%;
+}
+
+
+.contact-links {
+  background-color: #1f2e43;
+  background:
+    radial-gradient(
+      circle at 55% 92%, #426691 0 12%, transparent 12.2%
+    ), 
+    radial-gradient(
+      circle at 94% 72%, #426691 0 10%, transparent 10.2%
+    ), 
+    radial-gradient(
+      circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
+    ), 
+    radial-gradient(
+      circle at 0% 0%, #263a53 0 40%, transparent 40.2%
+    ), 
+    #1f2e43;
+  border-radius: 10px 0 0 10px;
+}
+
+.contact-form-wrapper {
+  background-color: #6a9ac4;
+  border-radius: 0 10px 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-links, .contact-form-wrapper {
+    width: 100%;
+  }
+  
+  .contact-links {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .contact-form-wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-box {
+    width: 95%;
+    margin: 8% 5%;
+  }
+}
+
+.contact-title {
+  font-family: 'Arimo', sans-serif;
+  color: #fff;
+  font-size: clamp(30px, 6vw, 60px);
+  letter-spacing: 2px;
+  text-align: center;
+  transform: scale(.95, 1);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.link {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.contact-img {
+  width: 45px;
+  height: 45px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.contact-img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contact-img:active {
+  transform: scale(1.1, 1.1);
+  filter: 
+    hue-rotate(220deg)
+    drop-shadow(2px 4px 4px #222)
+    sepia(0.3);
+}
+
+.form-item {
+  position: relative;
+}
+
+label, input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  color: #999;
+  font-size: clamp(14px, 1.5vw, 18px);
+  pointer-events: none;
+  user-select: none;
+}
+
+input, textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+
+input:focus+label, 
+input:valid+label, 
+textarea:focus+label, 
+textarea:valid+label {
+  font-size: clamp(13px, 1.3vw, 16px);
+  color: #777;
+  top: -20px;
+  transition: all .225s ease;
+}
+
+.submit-btn {
+  background-color: #fd917e;
+  filter: drop-shadow(2px 2px 3px #0003);
+  color: #fff;
+  font-family: "Poppins",sans-serif;
+  font-size: clamp(16px, 1.6vw, 18px);
+  display: block;
+  padding: 12px 20px;
+  margin: 2px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.submit-btn:active {
+  transform: scale(1.1, 1.1);
+  filter: sepia(0.5);
+}
+
+@media only screen and (max-width: 800px) {
+ .contact-title {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-title {
+    font-size: clamp(30px, 12vw, 60px);
+  }
+  
+  .links {
+    padding-top: 30px;
+  }
+  
+.contact-img {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* members contact  */
+
+#admin-cont {
+  background-image: linear-gradient(112.5deg, rgb(137,137,137) 0%, rgb(137,137,137) 10%,rgb(118,118,118) 10%, rgb(118,118,118) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(137,137,137) 0%, rgb(137,137,137) 10%,rgb(118,118,118) 10%, rgb(118,118,118) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(236deg, rgb(137,137,137) 0%, rgb(137,137,137) 10%,rgb(118,118,118) 10%, rgb(118,118,118) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(191deg, rgb(118,118,118),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+}
+
+.contact-cards {
+    justify-items: center;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 920px) {
+
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+.contact-card{
+	width: 200px; 
+  margin: 20px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+	.contact-card:first-of-type{
+		margin-right: 25px;
+	}
+
+	.contact-card:hover{
+		margin-top: -10px;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	}
+.contact-banner{
+	height: 100px;
+	width: 100%;
+	padding-top: 30px;
+	background-color: #FAFAFA;
+	background-size: cover;
+	background-position: center;
+}
+.contact-card .contact-banner{
+		background-image: url(assets/images/contact-bg.jpg);
+	}
+.contact-avatar{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+	background-color: #F1F1F1;
+	border-radius: 100%;
+}
+
+.contact-name, .cont-link, .cont-links, .cont-icon{
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+	.contact-name{
+		margin-top: 45px;
+		margin-bottom: 5px;
+		font-size: 18px;
+		color: #212121;
+	}
+	.cont-link {
+		display: block;
+		padding: 5px 0px;
+        margin-left: 25px;
+		font-size: 14px;
+		color: #9E9E9E;
+		text-decoration: none;
+
+	}
+
+    .cont-links {
+		display: block;
+		padding: 5px 0px;
+		font-size: 14px;
+		color: #9E9E9E;
+		text-decoration: none;
+	}
+    .cont-link:hover{
+			background-color: #FAFAFA;
+			color: inherit;
+		}
+        .cont-links:hover{
+			background-color: #FAFAFA;
+			color: inherit;
+		}
+.cont-ul {
+	margin-top: 10px;
+	padding: 15px 0px;
+	background-color: #FAFAFA;
+}
+	.cont-ul .cont-links{
+		display: inline;
+		margin-right: 10px;
+	}
+	.cont-ul .cont-links .cont-icon:hover{
+		transform: scale(1.5);
+		color: #2ab1ce;
+		}
+
+
+
+</style>
+
+</head>
+<body>
+
+<!-- Preloader -->
+
+<div id="preloader"></div>
+
+<button class="to-top is-hidden" id="to-top">2</button>
+
+
+<!--TOP MENU-->
+<menu class="top_menu flex">
+    <section class="flex_content">
+        <a href="mailto:prpsalumni@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            prpsalumni@gmail.com
+        </a>
+        <a href="tel:+880 1354-529474">
+            <i class="fa fa-headphones"></i>
+            +880 1354-529474
+        </a>
+    </section>
+    <section class="flex_content">
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+    </section>
+</menu>
+
+<!--NAV-->
+<nav>
+    <section class="flex_content">
+        <figure class="logo fixed_flex">
+          <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            <figcaption>
+                <strong class="title">PRPS</strong> Alumni Association
+            </figcaption>
+        </figure>
+    </section>
+    <section class="flex_content nav_content" id="nav_content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="members.html">Faculty</a>
+        <a href="notices.html">Notices</a>
+        <a href="events-gallery.html">Events Gallery</a>
+        <a href="contact.html" class="contact_btn active">Contact Us</a>
+    </section>
+    <section class="flex_content">
+        <a href="javascript:void(0)" class="ham"><i class="fa fa-bars"></i></a>
+    </section>
+</nav>
+
+<!--MENU-->
+<menu id="menu" class="side_menu">
+    <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a>
+    <strong class="fixed_flex logo"><img src="assets/images/logo.png" alt="Summit"  loading="lazy" /></strong>
+    <br>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="members.html">Faculty</a></li>
+      <li class="dropdown">
+          <a href="javascript:void(0)">Events</a>
+          <aside>
+              <a href="notices.html">Notices</a>
+              <a href="events-gallery.html">Events Gallery</a>
+          </aside>
+      </li>
+     
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href=""></a></li>
+        <!-- <li class="fixed_flex"><a href="javascript:void(0)" class="btn btn_1 chat_popup"></a> <a href="#" class="btn btn_2 chat_popup"></a> </li> -->
+    </ul>
+</menu>
+
+
+<!-- Contact Details of Admmins -->
+
+
+
+
+<!-- Contact Form  -->
+
+<section id="contact">
+    <div class="contact-box">
+      <div class="contact-links">
+        <h2 class="contact-title">Quick Links</h2>
+        <div class="links">
+          <div class="link">
+            <a href="https://www.facebook.com/profile.php?id=61561411820406"><img src="assets/icons/facebook.png" alt="Facebook" class="contact-img"></a>
+          </div>
+          <div class="link">
+            <a><img src="assets/icons/instagram.png" alt="Instagram" class="contact-img"></a>
+          </div>
+          <div class="link">
+            <a><img src="assets/icons/whatsapp.png" alt="WhatsApp" class="contact-img"></a>
+          </div>
+          <div class="link">
+            <a><img src="assets/icons/mail.png" alt="Email" class="contact-img"></a>
+          </div>
+        </div>
+        <br>
+          <h2 class="contact-title">Other Links</h2>
+          <div class="links">
+          <div class="link">
+            <a href="https://www.facebook.com/prpsgho?mibextid=ZbWKwL"><img src="assets/icons/facebook.png" alt="Facebook" class="contact-img"></a>
+          </div>
+          <div class="link">
+            <a href="http://prps.edu.bd/"><img src="assets/icons/web-browser.png" alt="Website" class="contact-img"></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form>
+          <div class="form-item">
+            <input type="text" name="sender" required>
+            <label>Name:</label>
+          </div>
+          <div class="form-item">
+            <input type="text" name="email" required>
+            <label>Email:</label>
+          </div>
+          <div class="form-item">
+            <textarea class="" name="message" required></textarea>
+            <label>Message:</label>
+          </div>
+          <button class="submit-btn">Send</button>  
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+<footer class="padding_4x footer-about">
+    <div class="flex copyright">
+      <section class="flex-content padding_1x">
+        <p>Copyright ©2024 All rights reserved || PRPS-AA</p>
+      </section>
+      <section class="flex-content padding_1x">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </section>
+    </div>
+  </footer>
+  
+  
+  <!--ADDITIONAL-->
+  <div class="overlay"></div>
+  <div class="cursor"></div>
+  
+  <script src="assets/js/script.js"></script>
+  
+  </body>
+  
+  </html>
