@@ -6,7 +6,7 @@
 /* preloader */
 
 #preloader {
-    background: #fff url(/assets/icons/preloader.gif) no-repeat center center;
+    background: #fff url(assets/icons/preloader.gif) no-repeat center center;
     height: 100vh;
     width: 100%;
     position: fixed;
